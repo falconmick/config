@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+n="$1"
+
+# Validate argument
+if [[ -z "$n" ]]; then
+  echo "Usage: ldev <1-9>"
+  exit 1
+fi
+
+if ! [[ "$n" =~ ^[1-9]$ ]]; then
+  echo "Error: argument must be a number from 1 to 9"
+  exit 1
+fi
+
+src="$(pwd)"
+target="$HOME/ldev-$n"
+
+echo "Creating symlink: $target -> $src"
+
+ln -sfn "$src" "$target" && echo "Done."

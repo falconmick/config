@@ -13,6 +13,7 @@ return {
               "**/.DS_Store",
               "**/node_modules/**",
               "**/.next/**",
+              "**/.meteor/**",
             },
           },
           grep = {
@@ -23,6 +24,7 @@ return {
               "**/node_modules/**",
               "**/.next/**",
               "**/package-lock.json",
+              "**/.meteor/**",
             },
           },
         },
@@ -37,6 +39,7 @@ return {
             exclude = {
               "**/.DS_Store",
               "**/node_modules/**",
+              "**/.meteor/**",
               "**/.next/**",
             },
           },

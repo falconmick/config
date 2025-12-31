@@ -5,6 +5,14 @@ return {
       picker = {
         hidden = true,
         ignored = true,
+        formatters = {
+          file = {
+            filename_first = true,
+            min_width = 80,
+            truncate = "right",
+            filename_only = false,
+          },
+        },
         sources = {
           files = {
             hidden = true,

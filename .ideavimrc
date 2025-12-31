@@ -126,3 +126,14 @@ nnoremap <leader>4 :action GotoHarpoon4<cr>
 
 inoremap jk <Esc>
 
+" Move lines down/up in Normal mode
+nnoremap <A-j> :action MoveLineDown<CR>
+nnoremap <A-k> :action MoveLineUp<CR>
+
+" Move lines down/up in Visual mode
+vnoremap <A-j> :action MoveLineDown<CR>
+vnoremap <A-k> :action MoveLineUp<CR>
+
+" Move lines down/up in Insert mode
+inoremap <A-j> <Esc>:action MoveLineDown<CR>gi
+inoremap <A-k> <Esc>:action MoveLineUp<CR>gi
